@@ -30,6 +30,7 @@ var burger = document.querySelector(".menu__burger");
 var nav = document.querySelector(".menu__nav");
 var body = document.querySelector("body");
 var menuLinks = document.querySelectorAll(".menu__link");
+var socialLinks = document.querySelectorAll(".header__link");
 burger.addEventListener("click", function () {
   burger.classList.toggle("active");
   nav.classList.toggle("active");
@@ -59,6 +60,14 @@ if (screen.width < 561) {
   subMenuBtn.addEventListener("click", function () {
     subMenuBtn.classList.toggle("active");
     subMenu.classList.toggle("active");
+  });
+  socialLinks.forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (subMenuBtn.classList.contains("active")) {
+        subMenuBtn.classList.toggle("active");
+        subMenu.classList.toggle("active");
+      }
+    });
   });
 }
 
