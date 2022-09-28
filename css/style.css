@@ -119,7 +119,7 @@ body.lock {
 .box {
   max-width: 910px;
   margin: 0px auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .box-header {
@@ -565,5 +565,83 @@ body .slick-dots li button:before {
 @media screen and (max-width: 480px) {
   .home__btn {
     margin-top: 10px;
+  }
+}
+
+.star {
+  fill: #000;
+}
+
+.social {
+  padding: 60px 0;
+}
+@media screen and (max-width: 656px) {
+  .social {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social {
+    padding: 30px 0;
+  }
+}
+.social__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  .social__row {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social__row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .social__item {
+    margin-left: 50px;
+  }
+  .social__item:last-child {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 656px) {
+  .social__item:nth-child(4) {
+    margin-left: 0;
+    margin-right: 50px;
+    margin-top: 25px;
+  }
+}
+.social__item:first-child {
+  margin-left: 0;
+}
+@media screen and (max-width: 480px) {
+  .social__item {
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25px;
+  }
+  .social__item:first-child {
+    margin-top: 0;
+  }
+  .social__item:nth-child(4) {
+    margin-right: 0;
+  }
+}
+.social__link {
+  height: 100%;
+}
+.social__link svg {
+  fill: #5982E7;
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    max-width: 768px;
   }
 }
