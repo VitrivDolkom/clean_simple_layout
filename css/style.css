@@ -90,6 +90,39 @@ button, input[type=submit] {
 }
 
 /*--------------------*/
+.subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+
+.title {
+  font-family: "Quicksand";
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
+  color: #3D4F9F;
+}
+.title span {
+  font-weight: 600;
+}
+
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  margin-top: 27px;
+}
+
 html {
   width: 100vw;
   overflow-x: hidden;
@@ -500,11 +533,6 @@ body .slick-dots li button:before {
 }
 .home__title {
   margin-top: 16px;
-  font-family: "Quicksand";
-  font-weight: 300;
-  font-size: 48px;
-  text-align: center;
-  color: #3D4F9F;
 }
 @media screen and (max-width: 768px) {
   .home__title {
@@ -517,17 +545,7 @@ body .slick-dots li button:before {
     margin-top: 12px;
   }
 }
-.home__title span {
-  font-weight: 600;
-}
 .home__text {
-  margin-top: 28px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center;
-  line-height: 29px;
-  color: #8D96BD;
   width: 502px;
 }
 @media screen and (max-width: 768px) {
@@ -580,7 +598,7 @@ body .slick-dots li button:before {
     padding: 40px 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .social {
     padding: 30px 0;
   }
@@ -595,7 +613,7 @@ body .slick-dots li button:before {
     justify-content: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .social__row {
     flex-direction: column;
   }
@@ -619,7 +637,7 @@ body .slick-dots li button:before {
 .social__item:first-child {
   margin-left: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .social__item {
     align-self: center;
     margin-left: 0;
@@ -644,4 +662,156 @@ body .slick-dots li button:before {
   .box {
     max-width: 768px;
   }
+}
+
+.plan {
+  background-color: #F5F8FF;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+@media screen and (max-height: 500px) {
+  .plan {
+    height: 400px;
+  }
+}
+.plan .box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.plan__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  z-index: 5;
+}
+.plan__title {
+  text-align: left;
+}
+@media screen and (max-width: 480px) {
+  .plan__title {
+    font-size: 33px;
+  }
+}
+.plan__text {
+  text-align: start;
+  width: 413px;
+}
+@media screen and (max-width: 480px) {
+  .plan__text {
+    width: 265px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .plan__text {
+    width: 280px;
+  }
+}
+.plan__buttons {
+  margin-top: 53px;
+  display: flex;
+}
+.plan__view {
+  background-color: #4c85ff;
+  width: 130px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 37px 13px 25px;
+  box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+}
+.plan__view a {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  .plan__view {
+    transition: all 0.3s linear;
+  }
+  .plan__view:hover {
+    background-color: #3861b9;
+  }
+}
+.plan__features {
+  background-color: #F5F8FF;
+  border: 1px solid #D1D1E4;
+  width: 130px;
+  height: 43px;
+  padding: 13px 21px;
+}
+.plan__features a {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #ADB4D2;
+}
+@media screen and (min-width: 992px) {
+  .plan__features {
+    transition: all 0.3s linear;
+  }
+  .plan__features:hover {
+    background-color: rgba(107, 138, 248, 0.1294117647);
+  }
+}
+.plan__images {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .plan__images {
+    opacity: 0.2;
+  }
+}
+.plan__image {
+  display: inline-block;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+
+#plan01 {
+  top: 50%;
+  left: 150px;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-top: 12px solid #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15);
+}
+#plan01:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 606px;
+  background-color: #fff;
+  bottom: 0;
+  left: -33px;
+}
+
+#plan02 {
+  top: 53%;
+  left: 69px;
+  border-top: 12px solid #fff;
+  border-bottom: 12px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15);
+}
+
+#plan03 {
+  top: 61%;
+  left: 500px;
+  border-top: 9px solid #fff;
+  border-bottom: 15px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15);
 }
