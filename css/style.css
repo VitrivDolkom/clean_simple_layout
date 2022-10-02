@@ -1028,3 +1028,106 @@ body .slick-dots li button:before {
     margin-top: 40px;
   }
 }
+
+.numbers {
+  display: flex;
+}
+@media screen and (max-width: 630px) {
+  .numbers {
+    flex-direction: column;
+  }
+}
+.numbers__item {
+  padding-top: 67px;
+  padding-bottom: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  flex: 0 0 50%;
+  padding-right: 90px;
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+@media screen and (max-width: 992px) {
+  .numbers__item {
+    padding-right: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .numbers__item {
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .numbers__item {
+    padding-right: 50px;
+  }
+}
+.numbers__num {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 83px;
+  /* identical to box height */
+  text-align: right;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  flex: 1 1 auto;
+}
+@media screen and (max-width: 992px) {
+  .numbers__num {
+    font-size: 35px;
+  }
+}
+.numbers__text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  width: 260px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 992px) {
+  .numbers__text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .numbers__text {
+    width: 159px;
+  }
+}
+
+.numbers-item2 {
+  background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+  align-items: start;
+  padding-left: 90px;
+}
+@media screen and (max-width: 992px) {
+  .numbers-item2 {
+    padding-left: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .numbers-item2 {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .numbers-item2 {
+    padding-left: 50px;
+  }
+}
+.numbers-item2 .numbers__text,
+.numbers-item2 .numbers__num {
+  color: #5E80FF;
+}
+.numbers-item2 .numbers__text {
+  text-align: start;
+}
