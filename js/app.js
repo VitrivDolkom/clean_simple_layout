@@ -101,12 +101,16 @@ memuLinks.forEach(function (element) {
 /***/ (() => {
 
 var body = document.querySelector("body");
+var currentPosition = body.scrollTop;
+localStorage.setItem("positionBeforeReload", currentPosition);
+var newPositionY = localStorage.getItem("positionBeforeReload");
+window.scrollTo(0, newPositionY);
 document.addEventListener("DOMContentLoaded", function () {
   var newPositionY = localStorage.getItem("positionBeforeReload");
-  body.scrollTo(0, newPositionY);
+  window.scrollTo(0, newPositionY);
 });
 body.addEventListener("scroll", function () {
-  var currentPosition = body.scrollTop;
+  currentPosition = body.scrollTop;
   localStorage.setItem("positionBeforeReload", currentPosition);
 });
 
@@ -119,10 +123,16 @@ body.addEventListener("scroll", function () {
 /***/ (() => {
 
 $(function () {
-  $('.slider').slick({
+  $('.sliderHeader').slick({
     dots: true,
     infinite: false,
     arrows: false
+  });
+  $('.blog__slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 1000
   });
 });
 
