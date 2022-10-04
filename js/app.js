@@ -132,7 +132,11 @@ $(function () {
     dots: true,
     infinite: true,
     arrows: true,
-    speed: 1000
+    speed: 1000,
+    responsive: [{
+      breakpoint: 992,
+      speed: 600
+    }]
   });
 });
 
