@@ -117,6 +117,7 @@ button, input[type=submit] {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
+  line-height: 27px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #8D96BD;
@@ -595,6 +596,7 @@ body.lock {
 
 .social {
   padding: 60px 0;
+  background-color: #fff;
 }
 @media screen and (max-width: 656px) {
   .social {
@@ -1357,6 +1359,7 @@ body.lock {
   margin-top: 32px;
   text-align: left;
   flex: 1 1 auto;
+  line-height: 27px;
 }
 @media screen and (max-width: 992px) {
   .blog-item__text {
@@ -1420,4 +1423,105 @@ body.lock {
   font-weight: 700;
   font-size: 13px;
   color: #A6B6DA;
+}
+
+.cust {
+  padding: 146px 0 185px;
+  position: relative;
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+}
+.cust .box {
+  max-width: 928px;
+}
+.cust__abs {
+  width: 698px;
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+.cust__title {
+  margin-top: 40px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  color: #3D4F9F;
+  text-align: left;
+}
+.cust__info {
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #A4ABC8;
+  margin-top: 20px;
+  width: 323px;
+}
+.cust__slide {
+  width: 487px;
+}
+.cust .slick-active.slick-slide:not(.slick-current) {
+  -webkit-animation: opacit 0.3s;
+          animation: opacit 0.3s;
+  opacity: 0.5;
+}
+.cust__wrap {
+  width: 423px;
+}
+.cust__text {
+  margin-top: 0;
+  text-align: left;
+  background: #FFFFFF;
+  border: 1px solid #D8E3FE;
+  box-shadow: 0px 5px 50px #F3F5FA;
+  padding: 40px 70px 53px 68px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #676F95;
+}
+.cust__img {
+  position: relative;
+  bottom: 31px;
+  display: flex;
+  justify-content: center;
+}
+
+@-webkit-keyframes opacit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes opacit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes opacityReverse {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacityReverse {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
