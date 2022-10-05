@@ -141,7 +141,11 @@ $(function () {
     slidesToShow: 2,
     leftMode: true,
     variableWidth: true,
-    speed: 800
+    speed: 800,
+    responsive: [{
+      breakpoint: 1300,
+      slidesToShow: 1
+    }]
   });
 });
 
