@@ -1,6 +1,37 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/acc.js":
+/*!***********************!*\
+  !*** ./src/js/acc.js ***!
+  \***********************/
+/***/ (() => {
+
+var accardeonTitle = document.querySelectorAll(".acc__title");
+var accardeonElement = document.querySelectorAll(".acc__el");
+accardeonTitle.forEach(function (el) {
+  el.addEventListener("click", function (e) {
+    if (el.parentElement.classList.contains("open")) {
+      el.parentElement.classList.toggle("open");
+    } else {
+      var i = 0;
+
+      while (i < accardeonTitle.length) {
+        if (accardeonTitle[i].parentElement.classList.contains("open") && accardeonTitle[i] != e) {
+          accardeonTitle[i].parentElement.classList.toggle("open");
+          break;
+        }
+
+        i += 1;
+      }
+
+      el.parentElement.classList.toggle("open");
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/app.js":
 /*!***********************!*\
   !*** ./src/js/app.js ***!
@@ -17,8 +48,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _saveScroll_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_saveScroll_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _fixMenuLinks_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fixMenuLinks.js */ "./src/js/fixMenuLinks.js");
 /* harmony import */ var _fixMenuLinks_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fixMenuLinks_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _acc_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./acc.js */ "./src/js/acc.js");
+/* harmony import */ var _acc_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_acc_js__WEBPACK_IMPORTED_MODULE_4__);
 
  // import "linearScroll";
+
 
 
 

@@ -1148,12 +1148,7 @@ body.lock {
 }
 @media screen and (max-width: 768px) {
   .blog {
-    padding: 45px 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .blog {
-    padding: 20px 0;
+    padding: 55px 0;
   }
 }
 .blog .box {
@@ -1198,12 +1193,7 @@ body.lock {
 }
 @media screen and (max-width: 992px) {
   .blog .slick-dots {
-    bottom: -60px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .blog .slick-dots {
-    bottom: -30px;
+    bottom: -50px;
   }
 }
 .blog .slick-prev {
@@ -1298,6 +1288,14 @@ body.lock {
 .blog-item .img1 {
   background: linear-gradient(13.46deg, rgba(255, 199, 53, 0.44) 1.89%, rgba(255, 227, 154, 0.93) 1.9%, rgba(255, 159, 90, 0) 68.24%), url(photo-1474377207190-a7d8b3334068.jpg);
   filter: drop-shadow(0px 15px 100px #E5EBF8);
+  position: relative;
+}
+.blog-item .img1:after {
+  content: url("../images/blog/4.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 480px) {
   .blog-item .img1 {
@@ -1639,5 +1637,179 @@ body.lock {
   }
   to {
     opacity: 1;
+  }
+}
+.quest {
+  padding: 176px 0;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1400px) {
+  .quest {
+    padding: 120px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .quest {
+    padding: 90px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .quest {
+    padding: 65px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .quest {
+    padding: 55px 0;
+  }
+}
+.quest .box {
+  width: 910px;
+}
+.quest__subtitle {
+  text-align: center;
+}
+.quest__title {
+  margin-top: 20px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #3D4F9F;
+}
+
+.acc {
+  align-self: start;
+  margin-top: 68px;
+}
+@media screen and (max-width: 992px) {
+  .acc {
+    margin-top: 50px;
+  }
+}
+.acc_text {
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+}
+.acc__el {
+  position: relative;
+  padding-bottom: 30px;
+}
+.acc__el:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid #D8E3FE;
+}
+.acc__el.open .acc__content {
+  display: flex;
+}
+.acc__el.open .acc__title {
+  color: #495274;
+}
+.acc__el.open .acc__title:after {
+  transform: rotate(180deg);
+}
+.acc__title {
+  text-align: left;
+  cursor: pointer;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #8E96B7;
+  position: relative;
+  padding-left: 38px;
+  transition: transform 0.6s linear;
+}
+.acc__title:after {
+  content: url("../images/quest/1.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.6s linear;
+}
+.acc__content {
+  padding: 25px 20px 20px 56px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .acc__content {
+    padding: 20px 15px 10px 35px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .acc__content {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.acc__btn {
+  margin-left: 62px;
+  background: #E8ECF4;
+  border-radius: 2px;
+  width: 195px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s linear;
+}
+@media screen and (min-width: 992px) {
+  .acc__btn:hover {
+    background-color: #F1F4F8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .acc__btn {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .acc__btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.acc__btn a {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #7382A3;
+}
+
+@-webkit-keyframes display {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+
+@keyframes display {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
   }
 }
