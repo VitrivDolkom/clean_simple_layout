@@ -57,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import "./linearAppear.js";
+
 
 /***/ }),
 
@@ -140,8 +140,9 @@ $(document).ready(function () {
   $('a.menu__link').on('click', function () {
     var $archor = $(this).attr('href');
     var cont_top = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
+    console.log(cont_top, $($archor).offset().top);
     $('html, body').stop().animate({
-      scrollTop: $($archor).offset().top - $('.header').height() + cont_top
+      scrollTop: $($archor).offset().top - $('.header').height()
     }, {
       duration: 1000,
       specialEasing: {
