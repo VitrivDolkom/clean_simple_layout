@@ -140,9 +140,10 @@ $(document).ready(function () {
   $('a.menu__link').on('click', function () {
     var $archor = $(this).attr('href');
     var cont_top = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
-    console.log(cont_top, $($archor).offset().top);
+    var there = $($archor).offset().top - $('.header').height();
+    there = there < 0 ? -there - $('.header').height() : there;
     $('html, body').stop().animate({
-      scrollTop: $($archor).offset().top - $('.header').height()
+      scrollTop: there
     }, {
       duration: 1000,
       specialEasing: {
