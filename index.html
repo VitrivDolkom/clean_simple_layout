@@ -27,11 +27,11 @@
             <div class='header__menu menu'>
                 <nav class='menu__nav'>
                     <ul class='menu__list'>
-                        <li class="menu__el"><a href='#' class='menu__link'>Home</a></li>
-                        <li class="menu__el"><a href='#' class='menu__link'>Blog</a></li>
-                        <li class="menu__el"><a href='#' class='menu__link'>Features</a></li>
-                        <li class="menu__el"><a href='#' class='menu__link'>Pricing</a></li>
-                        <li class="menu__el"><a href='#' class='menu__link'>Documentation</a></li>
+                        <li class="menu__el"><a href='#home' class='menu__link'>Home</a></li>
+                        <li class="menu__el"><a href='#blog' class='menu__link'>Blog</a></li>
+                        <li class="menu__el"><a href='#about' class='menu__link'>Features</a></li>
+                        <li class="menu__el"><a href='#cust' class='menu__link'>Pricing</a></li>
+                        <li class="menu__el"><a href='#start' class='menu__link'>Documentation</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,7 +58,7 @@
     </div>
     
 </header>
-<div class="firstSlider">
+<div class="firstSlider" id="home">
     <div class="slider sliderHeader" id="slider">
         <div class="slide">
             <div class="slide__wrap">
@@ -102,7 +102,7 @@
     </div>
 </div>
         <main class='content'>
-            <section class="social" id="social">
+            <div class="social" id="social">
     <div class="box">
         <div class="social__row">
             <div class="social__item"><a href="#" target="_blank" class="social__link"><img
@@ -117,7 +117,7 @@
                         src="./images/social/audi.svg" alt="audi"></a></div>
         </div>
     </div>
-</section>
+</div>
 
 
 
@@ -210,7 +210,7 @@
     </div>
 </section>
             <section class="blog" id="blog">
-    <div class="box">
+<div class="box">
         <div class="blog__subtitle subtitle">OUR RESOURCES</div>
         <div class="blog__title">Start reading our blog</div>
         <div class="blog__slider slider">
@@ -417,9 +417,89 @@
         </ul>
     </div>
 </section>
+            <section class="start" id="start">
+    <div class="box">
+        <div class="start__subtitle subtitle">
+            PLAN YOUR LIFE
+        </div>
+        <div class="start__title title">Get <span>started</span> now</div>
+        <div class="start__text text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem
+            an, insolens gubergren similique est cu. Et vel modus congue vituperata.</div>
+        <div class="start__footer">
+            <div class="start__btn btn1s">
+                <a href="">View pricing</a>
+            </div>
+            <div class="start__btn btn2s">
+                <a href="">Read documentation</a>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="sign" id="sign">
+    <div class="box">
+        <div class="sign__s1">
+            <div class="sign__title">Sign up for newsletter</div>
+            <div class="sign__text text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</div>
+        </div>
+        <form>
+            <input type="text" placeholder="Email address">
+            <button type="submit">Save me</button>
+        </form>
+    </div>
+</section>
 
         </main>
-        <!--  -->
+        <footer>
+
+    <div class='footer'>
+        <div class='box box-header'>
+            <div class="header__first">
+                <a class="header__logo" href="#">
+                    <img src="./images/firstScreen/logo.svg" alt="logotype">
+                </a>
+                <div class='header__menu menu'>
+                    <nav class='menu__nav'>
+                        <ul class='menu__list'>
+                            <li class="menu__el"><a href='#' class='menu__link'>Home</a></li>
+                            <li class="menu__el"><a href='#' class='menu__link'>Blog</a></li>
+                            <li class="menu__el"><a href='#' class='menu__link'>Features</a></li>
+                            <li class="menu__el"><a href='#' class='menu__link'>Pricing</a></li>
+                            <li class="menu__el"><a href='#' class='menu__link'>Documentation</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__second">
+                <div class="header__submenu">
+                    <img src="./images/firstScreen/submenu.svg" alt="open subMenu">
+                </div>
+                <div class="header__social">
+                    <a href="#" target="_blank" class="header__link"><img src="./images/firstScreen/f.svg"
+                            alt="facebook"></a>
+                    <a href="#" target="_blank" class="header__link"><img src="./images/firstScreen/telegram.svg"
+                            alt="telegram"></a>
+                    <a href="#" target="_blank" class="header__link"><img src="./images/firstScreen/twitter.svg"
+                            alt="twitter"></a>
+                    <a href="#" target="_blank" class="header__link"><img src="./images/firstScreen/m.svg" alt="M"></a>
+                </div>
+                <div class="header__btn">
+                    <a href="#">Get started</a>
+                </div>
+                <div class='menu__burger'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class='box box-header'>
+        <div class="t">
+            Copyright © 2018 by Random site
+        </div>
+    </div>
+</footer>
     </div>
 
     <script src="./libraries/jquery.min.js"></script>
