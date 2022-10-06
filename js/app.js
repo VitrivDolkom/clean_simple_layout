@@ -141,7 +141,7 @@ $(document).ready(function () {
     var $archor = $(this).attr('href');
     var cont_top = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
     $('html, body').stop().animate({
-      scrollTop: $($archor).offset().top - $('.menu').height() + cont_top
+      scrollTop: $($archor).offset().top - $('.header').height()
     }, {
       duration: 1000,
       specialEasing: {
